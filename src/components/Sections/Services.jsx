@@ -1,57 +1,44 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import retailImage from "../../assets/img/retailImage.png";
+import warehouseImage from "../../assets/img/warehouseImage.png";
+import accountingImage from "../../assets/img/accountingImage.png";
+import POSImage from "../../assets/img/POSImage.png";
 
 export default function Services() {
   return (
     <Wrapper id="services">
-      <div className="lightBg" style={{ padding: "50px 0" }}>
-        <div className="container">
-          <ClientSlider />
-        </div>
-      </div>
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
+            <h1 className="font40 extraBold">Jasa yang Kita Miliki</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Kami mengutamakan kepuasan customer untuk setiap produk dan jasa
+              yang kami buat. Kami juga berusaha untuk menyediakan jasa unggulan
+              dengan harga terbaik.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Tujuan kami adalah agar bisnis anda dapat berkompetisi dengan
+              menggunakan teknologi terkini.
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-              />
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Website"
+                subtitle="Kami melayani pembuatan website transaksional yang bisa dirancang secara leluasa berdasarkan kebutuhan customer."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                icon="mobile"
+                title="Aplikasi Mobile"
+                subtitle="Kami melayani pembuatan aplikasi mobile transaksional agar bisnis Anda dapat dijalankan dimanapun Anda berada."
               />
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -59,18 +46,24 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h4 className="font15 semiBold">Sekilas Tentang Perusahaan</h4>
+                <h2 className="font40 extraBold">Bisnis - Teknologi</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  IKP memiliki Misi untuk mengintegrasikan setiap bisnis di
+                  Indonesia dengan internet. Dengan berkembangnya zaman yang
+                  serba internet, maka bisnis harus mulai terintegrasikan dengan
+                  internet. Kami dapat membantu bisnis Anda untuk mulai
+                  mengintegrasikan teknologi tanpa budget yang terlalu tinggi.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                <ButtonsRow
+                  className="flexNullCenter"
+                  style={{ margin: "30px 0" }}
+                >
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
-                  </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                    <FullButton
+                      title="Konsultasi dengan Kami"
+                      action={() => alert("clicked")}
+                    />
                   </div>
                 </ButtonsRow>
               </AddLeft>
@@ -78,18 +71,18 @@ export default function Services() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} alt="office" />
+                      <img src={retailImage} alt="retail" />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <img src={warehouseImage} alt="warehouse" />
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
+                      <img src={POSImage} alt="pos" />
                     </AddImgWrapp3>
                     <AddImgWrapp4>
-                      <img src={AddImage4} alt="office" />
+                      <img src={accountingImage} alt="accounting" />
                     </AddImgWrapp4>
                   </div>
                 </AddRightInner>
