@@ -3,10 +3,11 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
-import HeaderImage from "../../assets/img/header-img.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
+// Image
 import LandingPageImg from "../../assets/img/LandingPageImg.jpg";
+import whatsappIcon from "../../assets/img/whatsappIcon.png";
 
 export default function Header() {
   return (
@@ -15,12 +16,16 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">Kita adalah Perusahaan IT.</h1>
           <HeaderP className="font13 semiBold">
-            IKP melayani pembuatan website dan mobile apps transaksional yang
-            berkaitan dengan POS, kelola stok, laporan keuangan, dan manajemen
-            bisnis lainnya.
+            IKP melayani pembuatan website dan aplikasi ponsel transaksional
+            yang berkaitan dengan POS, kelola stok, laporan keuangan, dan
+            manajemen bisnis lainnya.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Kontak Kami" />
+            <FullButton
+              title="Kontak Kami"
+              contact="0882003112120"
+              icon={whatsappIcon}
+            />
           </BtnWrapper>
         </div>
       </LeftSide>

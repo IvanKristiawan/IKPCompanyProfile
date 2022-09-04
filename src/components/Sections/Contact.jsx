@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+// Components
+import FullButton from "../Buttons/FullButton";
 // Assets
 import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
+// Image
+import whatsappIcon from "../../assets/img/whatsappIcon.png";
 
 export default function Contact() {
   return (
@@ -13,7 +17,7 @@ export default function Contact() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Konsultasi dengan Kami</h1>
             <p className="font13">
-              Konsultasikan website atau aplikasi mobile yang bisnis Anda
+              Konsultasikan website atau aplikasi ponsel yang bisnis Anda
               butuhkan.
               <br />
               Harga jasa pelayanan bisa di negosiasikan.
@@ -21,64 +25,14 @@ export default function Contact() {
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Form>
-                <label className="font13">Nama Lengkap:</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  className="font20 extraBold"
-                />
-                <label className="font13">Email:</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  className="font20 extraBold"
-                />
-                <label className="font13">Perusahaan:</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  className="font20 extraBold"
-                />
-                <label className="font13">Pesan:</label>
-                <textarea
-                  rows="4"
-                  cols="50"
-                  type="text"
-                  id="message"
-                  name="message"
-                  className="font20 extraBold"
-                />
-              </Form>
               <SumbitWrapper className="flex">
-                <ButtonInput
-                  type="submit"
-                  value="Kirim Pesan"
-                  className="pointer animate radius8"
+                <FullButton
+                  title="Kirim pesan"
+                  contact="0882003112120"
                   style={{ maxWidth: "220px" }}
+                  icon={whatsappIcon}
                 />
               </SumbitWrapper>
-            </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div
-                style={{ width: "50%" }}
-                className="flexNullCenter flexColumn"
-              >
-                <ContactImgBox>
-                  <img src={ContactImg1} alt="office" className="radius6" />
-                </ContactImgBox>
-                <ContactImgBox>
-                  <img src={ContactImg2} alt="office" className="radius6" />
-                </ContactImgBox>
-              </div>
-              <div style={{ width: "50%" }}>
-                <div style={{ marginTop: "100px" }}>
-                  <img src={ContactImg3} alt="office" className="radius6" />
-                </div>
-              </div>
             </div>
           </div>
         </div>

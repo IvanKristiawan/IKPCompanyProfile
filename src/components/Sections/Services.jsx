@@ -8,6 +8,7 @@ import retailImage from "../../assets/img/retailImage.png";
 import warehouseImage from "../../assets/img/warehouseImage.png";
 import accountingImage from "../../assets/img/accountingImage.png";
 import POSImage from "../../assets/img/POSImage.png";
+import whatsappIcon from "../../assets/img/whatsappIcon.png";
 
 export default function Services() {
   return (
@@ -21,7 +22,7 @@ export default function Services() {
               yang kami buat. Kami juga berusaha untuk menyediakan jasa unggulan
               dengan harga terbaik.
               <br />
-              Tujuan kami adalah agar bisnis anda dapat berkompetisi dengan
+              Tujuan kami adalah agar bisnis Anda dapat berkompetisi dengan
               menggunakan teknologi terkini.
             </p>
           </HeaderInfo>
@@ -36,8 +37,8 @@ export default function Services() {
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="mobile"
-                title="Aplikasi Mobile"
-                subtitle="Kami melayani pembuatan aplikasi mobile transaksional agar bisnis Anda dapat dijalankan dimanapun Anda berada."
+                title="Aplikasi Ponsel"
+                subtitle="Kami melayani pembuatan aplikasi ponsel transaksional agar bisnis Anda dapat dijalankan dimanapun Anda berada."
               />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
@@ -47,7 +48,7 @@ export default function Services() {
             <Advertising className="flexSpaceCenter">
               <AddLeft>
                 <h4 className="font15 semiBold">Sekilas Tentang Perusahaan</h4>
-                <h2 className="font40 extraBold">Bisnis - Teknologi</h2>
+                <h2 className="font40 extraBold">IT Kita Pro</h2>
                 <p className="font12">
                   IKP memiliki Misi untuk mengintegrasikan setiap bisnis di
                   Indonesia dengan internet. Dengan berkembangnya zaman yang
@@ -62,6 +63,8 @@ export default function Services() {
                   <div style={{ width: "190px" }}>
                     <FullButton
                       title="Konsultasi dengan Kami"
+                      contact="0882003112120"
+                      icon={whatsappIcon}
                       action={() => alert("clicked")}
                     />
                   </div>

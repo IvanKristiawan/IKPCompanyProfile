@@ -42,7 +42,7 @@ export default function Contact() {
               smooth={true}
               offset={-80}
             >
-              Back to top
+              Kembali ke atas
             </Link>
           </InnerWrapper>
         </div>
