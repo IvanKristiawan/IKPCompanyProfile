@@ -2,11 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
-import FullButton from "../Buttons/FullButton";
 // Assets
-import ProjectImg1 from "../../assets/img/projects/1.png";
-import ProjectImg2 from "../../assets/img/projects/2.png";
-import ProjectImg3 from "../../assets/img/projects/3.png";
 import POSUi from "../../assets/img/POSUi.png";
 import PetCareUi from "../../assets/img/PetCareUi.png";
 import AkuntiUi from "../../assets/img/AkuntiUi.png";
@@ -25,7 +21,7 @@ export default function Projects() {
                 img={POSUi}
                 title="Point Of Sale (POS)"
                 text="Website yang digunakan untuk kasir, pengelolaan stok, supplier, laporan keuangan, dll."
-                action={() => alert("clicked")}
+                link="https://posbes.itkitapro.com/"
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -33,7 +29,7 @@ export default function Projects() {
                 img={PetCareUi}
                 title="PetCare"
                 text="Website yang digunakan untuk pelayanan kesehatan hewan mulai dari jual-beli obat, chat dokter, lihat lokasi Rumah Sakit Hewan, dll."
-                action={() => alert("clicked")}
+                link="https://petcare-indonesia.herokuapp.com/"
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -41,7 +37,7 @@ export default function Projects() {
                 img={AkuntiUi}
                 title="Akunti"
                 text="Website yang digunakan untuk pembukuan aktivitas akuntansi perusahaan."
-                action={() => alert("clicked")}
+                link="https://akunti.itkitapro.com/"
               />
             </div>
           </div>
