@@ -18,7 +18,7 @@ export default function Services() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Jasa yang Kita Miliki</h1>
             <p className="font13">
-              Kami mengutamakan kepuasan customer untuk setiap produk dan jasa
+              Kami mengutamakan kepuasan client untuk setiap produk dan jasa
               yang kami buat. Kami juga berusaha untuk menyediakan jasa unggulan
               dengan harga terbaik.
               <br />
@@ -31,7 +31,7 @@ export default function Services() {
               <ServiceBox
                 icon="monitor"
                 title="Website"
-                subtitle="Kami melayani pembuatan website transaksional yang bisa dirancang secara leluasa berdasarkan kebutuhan customer."
+                subtitle="Kami melayani pembuatan website transaksional yang bisa dirancang secara leluasa berdasarkan kebutuhan client."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
